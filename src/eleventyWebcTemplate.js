@@ -86,7 +86,7 @@ module.exports = function(eleventyConfig, options = {}) {
 			let page = new _WebC();
 
 			page.setGlobalComponentManager(globalComponentManager);
-			page.setBundlerMode(true);
+			page.setBundlerMode(false);
 			page.setContent(inputContent, inputPath);
 
 			if(componentsMap) {
